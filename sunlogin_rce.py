@@ -6,7 +6,7 @@ import socket
 from datetime import datetime
 from multiprocessing.dummy import Pool as ThreadPool
 import requests
-# https://www.jb51.net/article/219526.htm
+
 port_list = []
 
 class ScanPort:
@@ -18,7 +18,7 @@ class ScanPort:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			res = s.connect_ex((self.ip, port))
-			if res == 0:  # 端口开启
+			if res == 0:
 				print('Ip:{} Port:{} IS OPEN'.format(self.ip, port))
 				port_list.append(port)
 		except Exception as e:
@@ -31,9 +31,7 @@ class ScanPort:
 		self.ip = socket.gethostbyname(remote_server)
 		ports = [i for i in range(1, 65535)]
 		socket.setdefaulttimeout(0.5)
-		# 开始时间
 		t1 = datetime.now()
-		# 设置多进程
 		threads = []
 		pool = ThreadPool(processes=1000)
 		pool.map(self.scan_port, ports)
