@@ -7,7 +7,9 @@ Yapi远程命令执行漏洞.py
 ```
 
 ## CVE-2022-23131 Zabbix SAML SSO认证绕过     CVE-2022-23131.py
+```
 python3 CVE-2022-23131.py -u http://127.0.0.1 -a Admin
+```
 ![image](https://user-images.githubusercontent.com/33044636/156746852-69ffce94-4d5b-4cea-bfe5-688304ec08aa.png)
 
 
