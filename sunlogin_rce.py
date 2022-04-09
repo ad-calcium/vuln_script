@@ -54,7 +54,6 @@ def _POC(ip):
 				_Rce(ips)
 				exit(1)
 		except Exception as e:
-			print(e)
 			pass
 
 
