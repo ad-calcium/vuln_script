@@ -159,7 +159,7 @@ def main():
 			ip = url + ":" + port
 			_verify(ip)
 		else:
-			print("请输出目标的端口和地址")
+			print("请输入目标的端口和地址")
 
 
 if __name__ == '__main__':
