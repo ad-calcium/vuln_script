@@ -133,7 +133,7 @@ def _verify(urls):
 
 def init_command_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-u', '--target', help='请输入目标地址', metavar='')
+	parser.add_argument('-t', '--target', help='请输入目标地址', metavar='')
 	parser.add_argument('-p', '--port', help="请输入目标端口", metavar='')
 	parser.add_argument('--scan', action="store_true", help='漏洞扫描模式')
 	parser.add_argument('--rce', action="store_true", help='漏洞验证模式')
